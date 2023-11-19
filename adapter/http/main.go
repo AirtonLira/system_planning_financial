@@ -8,6 +8,7 @@ import (
 	"github.com/AirtonLira/system_planning_financial.git/adapter/http/transaction"
 )
 
+// Init - function initial application
 func Init() {
 	http.HandleFunc("/", transaction.GetTransaction)
 	http.HandleFunc("/create", transaction.CreateTransaction)

@@ -7,6 +7,7 @@ import (
 	"github.com/AirtonLira/system_planning_financial.git/model/infra"
 )
 
+// Health - Function of the return status about health application
 func Health(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "GET" {
 		w.WriteHeader(http.StatusMethodNotAllowed)

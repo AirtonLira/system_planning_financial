@@ -5,13 +5,12 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"time"
 
+	"github.com/AirtonLira/system_planning_financial.git/adapter/http/util/time"
 	"github.com/AirtonLira/system_planning_financial.git/model/transaction"
 )
 
-var layout = "2006-01-02T15:04:05"
-
+// GetTransaction - Function of the return transaction in method GET
 func GetTransaction(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "GET" {
 		w.WriteHeader(http.StatusMethodNotAllowed)
@@ -20,13 +19,12 @@ func GetTransaction(w http.ResponseWriter, r *http.Request) {
 
 	w.Header().Set("Content-type", "application/json")
 
-	salaryReceived, _ := time.Parse(layout, "2023-11-18T16:41:00")
 	var transactions = transaction.Transactions{
 		transaction.Transaction{
 			Title:     "Salary",
 			Amount:    15000.0,
 			Type:      0,
-			CreatedAt: salaryReceived,
+			CreatedAt: time.ConvertStringToTime("2023-11-19T10:52:00"),
 		},
 	}
 
@@ -34,6 +32,7 @@ func GetTransaction(w http.ResponseWriter, r *http.Request) {
 
 }
 
+// CreateTransaction - Function of the create a new transaction and print console application
 func CreateTransaction(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "POST" {
 		w.WriteHeader(http.StatusMethodNotAllowed)
