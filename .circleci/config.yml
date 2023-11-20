@@ -15,18 +15,18 @@ jobs:
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # A list of available CircleCI docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/go
     docker:
-      - image: circleci/golang:1.18
+      - image: circleci/golang:1.8
     steps:
       # Checkout the code as the first step.
       - checkout
       - run: go get -v -t -d ./...
       - run: go test -v ./...
-      
+
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
   # CircleCI will run this workflow on every commit.
   # For more details on extending your workflow, see the configuration docs: https://circleci.com/docs/configuration-reference/#workflows
-  sample:
+  build-and-test-app:
     jobs:
       - build-and-test
