@@ -16,6 +16,8 @@ jobs:
     # A list of available CircleCI docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/go
     docker:
       - image: circleci/golang:1.8
+
+    working_directory: /go/src/github.com/AirtonLira/system_planning_financial
     steps:
       # Checkout the code as the first step.
       - checkout
