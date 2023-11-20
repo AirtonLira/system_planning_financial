@@ -10,7 +10,7 @@ jobs:
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # A list of available CircleCI docker Convenience Images are available here: https://circleci.com/developer/images/image/cimg/go
     docker:
-      - image: circleci/golang:1.8
+      - image: circleci/golang:1.17
 
     working_directory: /go/src/github.com/AirtonLira/system_planning_financial
     steps:
