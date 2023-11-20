@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/AirtonLira/system_planning_financial.git/model/infra"
+	"github.com/AirtonLira/system_planning_financial/model/infra"
 )
 
 // Health - Function of the return status about health application

@@ -1,4 +1,4 @@
-module github.com/AirtonLira/system_planning_financial.git
+module github.com/AirtonLira/system_planning_financial
 
 go 1.18
 

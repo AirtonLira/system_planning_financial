@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/AirtonLira/system_planning_financial.git/adapter/http/util/time"
-	"github.com/AirtonLira/system_planning_financial.git/model/transaction"
+	"github.com/AirtonLira/system_planning_financial/adapter/http/util/time"
+	"github.com/AirtonLira/system_planning_financial/model/transaction"
 )
 
 // GetTransaction - Function of the return transaction in method GET

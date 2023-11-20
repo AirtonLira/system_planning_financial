@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/AirtonLira/system_planning_financial.git/adapter/http/infra"
-	"github.com/AirtonLira/system_planning_financial.git/adapter/http/transaction"
+	"github.com/AirtonLira/system_planning_financial/adapter/http/infra"
+	"github.com/AirtonLira/system_planning_financial/adapter/http/transaction"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
