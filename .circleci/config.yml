@@ -21,6 +21,7 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      - run: go mod download
       - run: go get -v -t -d ./...
       - run: go test -v ./...
 
