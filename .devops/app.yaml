@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  app:
+    image: airtonlira/system_planning_financial
+    container_name: "app_system_planning_financial"
+    ports:
+      - "8090:8090"
